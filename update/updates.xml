@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updates>
+    <update>
+        <name>Hikachimpstore Plugin updates</name>
+        <description>Updates for the Hikachimpstore plugin.</description>
+        <element>hikachimp</element>
+        <type>plugin</type>
+        <folder>hikashop</folder>
+        <version>1.0</version>
+        <client>site</client>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/brettvac/Hikachimpstore/releases/download/1.0/plg_hikashop_hikachimpstore.zip</downloadurl>
+        </downloads>
+        <infourl title="HikaShop Hikachimpstore Plugin">https://github.com/brettvac/Hikachimpstore</infourl>
+        <changelogurl>https://raw.githubusercontent.com/brettvac/Hikachimpstore/refs/heads/main/update/changelog.xml</changelogurl>
+        <targetplatform name="joomla" version="5\..*|6\..*"/>
+        <php_minimum>8.1.0</php_minimum>
+    </update>
+</updates>

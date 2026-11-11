@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="hikashop" method="upgrade">
+    <name>PLG_HIKASHOP_CHIMPSTORE</name>
+    <author>Brett</author>
+    <creationDate>October 2026</creationDate>
+    <version>1.0</version>
+    <license>GNU General Public License version 2</license>
+    <description>PLG_HIKASHOP_CHIMPSTORE_DESCRIPTION</description>
+    <files>
+        <filename plugin="chimpstore">chimpstore.php</filename>
+        <folder>fields</folder>
+        <folder>helper</folder>
+        <folder>language</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_hikashop_chimpstore.ini</language>
+        <language tag="en-GB">language/en-GB/plg_hikashop_chimpstore.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/plugins/hikashop/chimpstore/fields">
+                <field name="api_key" type="text" label="PLG_HIKASHOP_CHIMPSTORE_API_KEY_LABEL" description="PLG_HIKASHOP_CHIMPSTORE_API_KEY_DESC" required="true" size="40" />
+                <field name="audience_id" type="mailchimpaudiences" label="PLG_HIKASHOP_CHIMPSTORE_AUDIENCE_LABEL" description="PLG_HIKASHOP_CHIMPSTORE_AUDIENCE_DESC" />
+                <field name="store_id" type="mailchimpstores" label="PLG_HIKASHOP_CHIMPSTORE_STORE_LABEL" description="PLG_HIKASHOP_CHIMPSTORE_STORE_DESC" />
+                <field name="sync_products" type="mailchimpsync" label="PLG_HIKASHOP_CHIMPSTORE_SYNC_PRODUCTS_LABEL" description="PLG_HIKASHOP_CHIMPSTORE_SYNC_PRODUCTS_FIELD_DESC" />
+                <field name="debug" type="radio" label="PLG_HIKASHOP_CHIMPSTORE_DEBUG_LABEL" description="PLG_HIKASHOP_CHIMPSTORE_DEBUG_DESC" class="btn-group btn-group-yesno" default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+  <updateservers>
+	  <server type="extension" priority="1">https://raw.githubusercontent.com/brettvac/Hikashop-Chimpstore-Plugin/refs/heads/main/update/updates.xml</server>
+  </updateservers>
+  <changelogurl>https://raw.githubusercontent.com/brettvac/Hikashop-Chimpstore-Plugin/refs/heads/main/update/changelog.xml</changelogurl>
+</extension>
