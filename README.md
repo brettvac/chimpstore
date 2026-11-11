@@ -1,4 +1,4 @@
-# Chimpstorep - Mailchimp & Hikashop E-commerce Integration
+# Chimpstore - Mailchimp & Hikashop E-commerce Integration
 
 Synchronize HikaShop customers and orders with a Mailchimp E-commerce Store, allowing purchases made through your Joomla website to be recorded in Mailchimp.
 
